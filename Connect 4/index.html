@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Connect 4</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<nav><a href="rules.html" target="_blank">Rules</a></nav>
+
+<body>
+  <div id="title">
+    <h1> CONNECT FOUR</h1>
+  </div> </br>
+  <div id="level">
+    <p id="p"> Difficulty</p>
+    <select id="difficulty">
+      <option value="1">Easy</option>
+      <option value="2">Easy I</option>
+      <option value="5">Easy II</option>
+      <option value="6">Medium</option>
+      <option value="8">Hard</option>
+    </select>
+  </div></br></br>
+  <div id="startbutton"><button id="reset" onclick="startGame()"> Reset </button></br></br>
+    <div id="result"></div>
+  </div></br></br>
+  <table id="gameBoard">
+    <tr>
+      <td id="1" class="add" onclick="addPieces(0)"></td>
+      <td id="2" class="add" onclick="addPieces(1)"></td>
+      <td id="3" class="add" onclick="addPieces(2)"></td>
+      <td id="4" class="add" onclick="addPieces(3)"></td>
+      <td id="5" class="add" onclick="addPieces(4)"></td>
+      <td id="6" class="add" onclick="addPieces(5)"></td>
+      <td id="7" class="add" onclick="addPieces(6)"></td>
+    </tr>
+    <tr>
+      <td id="1a" class="add" onclick="addPieces(0)"></td>
+      <td id="2a" class="add" onclick="addPieces(1)"></td>
+      <td id="3a" class="add" onclick="addPieces(2)"></td>
+      <td id="4a" class="add" onclick="addPieces(3)"></td>
+      <td id="5a" class="add" onclick="addPieces(4)"></td>
+      <td id="6a" class="add" onclick="addPieces(5)"></td>
+      <td id="7a" class="add" onclick="addPieces(6)"></td>
+    </tr>
+    <tr>
+      <td id="1b" class="add" onclick="addPieces(0)"></td>
+      <td id="2b" class="add" onclick="addPieces(1)"></td>
+      <td id="3b" class="add" onclick="addPieces(2)"></td>
+      <td id="4b" class="add" onclick="addPieces(3)"></td>
+      <td id="5b" class="add" onclick="addPieces(4)"></td>
+      <td id="6b" class="add" onclick="addPieces(5)"></td>
+      <td id="7b" class="add" onclick="addPieces(6)"></td>
+    </tr>
+    <tr>
+      <td id="1c" class="add" onclick="addPieces(0)"></td>
+      <td id="2c" class="add" onclick="addPieces(1)"></td>
+      <td id="3c" class="add" onclick="addPieces(2)"></td>
+      <td id="4c" class="add" onclick="addPieces(3)"></td>
+      <td id="5c" class="add" onclick="addPieces(4)"></td>
+      <td id="6c" class="add" onclick="addPieces(5)"></td>
+      <td id="7c" class="add" onclick="addPieces(6)"> </td>
+    </tr>
+    <tr>
+      <td id="1d" class="add" onclick="addPieces(0)"></td>
+      <td id="2d" class="add" onclick="addPieces(1)"></td>
+      <td id="3d" class="add" onclick="addPieces(2)"></td>
+      <td id="4d" class="add" onclick="addPieces(3)"></td>
+      <td id="5d" class="add" onclick="addPieces(4)"></td>
+      <td id="6d" class="add" onclick="addPieces(5)"></td>
+      <td id="7d" class="add" onclick="addPieces(6)"></td>
+    </tr>
+    <tr>
+      <td id="1e" class="add" onclick="addPieces(0)"></td>
+      <td id="2e" class="add" onclick="addPieces(1)"></td>
+      <td id="3e" class="add" onclick="addPieces(2)"></td>
+      <td id="4e" class="add" onclick="addPieces(3)"></td>
+      <td id="5e" class="add" onclick="addPieces(4)"></td>
+      <td id="6e" class="add" onclick="addPieces(5)"></td>
+      <td id="7e" class="add" onclick="addPieces(6)"></td>
+    </tr>
+  </table>
+  </br>
+  <div id="notice"></div><br>
+  <a id="rules" href="img/rules.png" target="_blank"> Grid layout of board </a>
+  <div id="lastPlayed">
+    <p id="red"></p>
+    <p id="yellow"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer> Copyright 2023 </footer>
+
+</html>
